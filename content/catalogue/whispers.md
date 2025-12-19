@@ -11,6 +11,6 @@ description: "Post-apocalyptic short story collection"
 
 A collection of short fiction, led by the title story set in a post-apocalyptic world.
 
-[Available on Amazon →](https://www.amazon.co.uk/)
+[Available on Amazon →](https://amzn.eu/d/6TKq7Nf)
 
 </div>
