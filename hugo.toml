@@ -1,0 +1,40 @@
+baseURL = 'https://mcmaster.eu/'
+languageCode = 'en-gb'
+title = 'Grant McMaster'
+theme = 'minimal'
+
+[params]
+  description = "Writer. Psychologist. Builder of strange things."
+  author = "Grant McMaster"
+  
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Back Catalogue"
+    url = "/catalogue/"
+    weight = 3
+  # Gated sections - uncomment when ready
+  # [[menu.main]]
+  #   name = "The Fallen"
+  #   url = "/fallen/"
+  #   weight = 4
+  # [[menu.main]]
+  #   name = "LuxSuite"
+  #   url = "/luxsuite/"
+  #   weight = 5
+  # [[menu.main]]
+  #   name = "Arathan"
+  #   url = "/arathan/"
+  #   weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

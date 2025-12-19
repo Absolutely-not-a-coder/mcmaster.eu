@@ -1,0 +1,14 @@
+# SSH credentials - DO NOT COMMIT
+id_rsa
+id_rsa.pub
+ssh.md
+ssh.txt
+
+# Screenshots and temp files
+*.png
+
+# Zip files
+*.zip
+
+# Claude context (private)
+.claude/
