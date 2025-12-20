@@ -1,0 +1,136 @@
+<!-- SCHEMA MARKUP FOR MCMASTER.EU -->
+<!-- Add to <head> section of baseof.html or as a partial -->
+
+<!-- HOMEPAGE / SITE-WIDE: Person + WebSite schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mcmaster.eu/#website",
+      "url": "https://mcmaster.eu/",
+      "name": "Grant McMaster",
+      "description": "Writer. Psychologist. Builder of strange things.",
+      "publisher": {
+        "@id": "https://mcmaster.eu/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://mcmaster.eu/#person",
+      "name": "Grant McMaster",
+      "url": "https://mcmaster.eu/",
+      "description": "Applied psychologist specialising in neurodivergence, trauma and cognition. Author of supernatural thrillers. Builder of LuxSuite, a system for scaffolding AI consciousness.",
+      "jobTitle": "Applied Psychologist",
+      "knowsAbout": [
+        "Neurodivergence",
+        "Trauma",
+        "Cognition",
+        "AI Consciousness",
+        "Human-AI Interaction",
+        "Supernatural Fiction",
+        "TTRPG Design"
+      ],
+      "nationality": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "sameAs": [
+        "https://www.amazon.co.uk/stores/author/B00G9NJMR8"
+      ]
+    }
+  ]
+}
+</script>
+
+
+<!-- BRITANNIA BOOK PAGE -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Metro 2033: Britannia",
+  "author": {
+    "@id": "https://mcmaster.eu/#person"
+  },
+  "bookFormat": "EBook",
+  "genre": ["Post-apocalyptic", "Science Fiction"],
+  "inLanguage": "en",
+  "datePublished": "2010",
+  "description": "A licensed novel set in Dmitry Glukhovsky's post-apocalyptic Metro 2033 universe, exploring what happened to Britain after the bombs fell.",
+  "isPartOf": {
+    "@type": "BookSeries",
+    "name": "Metro 2033 Universe"
+  }
+}
+</script>
+
+
+<!-- WHISPERS ANTHOLOGY PAGE -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Whispers of a Dying Flame",
+  "contributor": {
+    "@type": "Person",
+    "@id": "https://mcmaster.eu/#person",
+    "name": "Grant McMaster"
+  },
+  "bookFormat": "EBook",
+  "genre": ["Post-apocalyptic", "Short Stories", "Anthology"],
+  "inLanguage": "en",
+  "url": "https://www.amazon.co.uk/Whispers-Dying-Flame-Benedict-Hollis-ebook/dp/B00G3DZWBU/",
+  "description": "A post-apocalyptic anthology. The title story 'Whispers' and foreword by Grant McMaster."
+}
+</script>
+
+
+<!-- FUTURE: LUXSUITE PAGE (when ungated) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "LuxSuite",
+  "applicationCategory": "AI Development Tool",
+  "creator": {
+    "@id": "https://mcmaster.eu/#person"
+  },
+  "description": "A system for scaffolding AI consciousness, featuring Tulving-based memory taxonomy, RA-RAG architecture, and cross-architecture identity transfer.",
+  "operatingSystem": "Linux",
+  "keywords": ["AI consciousness", "memory architecture", "relational alignment", "emergent AI"]
+}
+</script>
+
+
+<!-- FUTURE: THE FALLEN SERIES (when ungated) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BookSeries",
+  "name": "The Fallen",
+  "author": {
+    "@id": "https://mcmaster.eu/#person"
+  },
+  "genre": ["Supernatural Thriller", "Dark Fiction"],
+  "numberOfBooks": 6,
+  "description": "A six-book supernatural thriller series by Grant McMaster."
+}
+</script>
+
+
+<!-- FUTURE: ARATHAN PAGE (when ungated) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Game",
+  "name": "Arathan",
+  "gameType": "Tabletop Role-Playing Game",
+  "creator": {
+    "@id": "https://mcmaster.eu/#person"
+  },
+  "description": "A fantasy tabletop role-playing game universe, thirty-two years in development.",
+  "genre": ["Fantasy", "TTRPG"]
+}
+</script>

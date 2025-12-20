@@ -1,0 +1,55 @@
+{{/* Schema markup partial for mcmaster.eu */}}
+
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ .Site.BaseURL }}#website",
+      "url": "{{ .Site.BaseURL }}",
+      "name": "{{ .Site.Title }}",
+      "description": "{{ .Site.Params.description }}",
+      "publisher": {
+        "@id": "{{ .Site.BaseURL }}#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#person",
+      "name": "Grant McMaster",
+      "url": "{{ .Site.BaseURL }}",
+      "description": "Applied psychologist specialising in neurodivergence, trauma and cognition. Author of supernatural thrillers. Builder of LuxSuite, a system for scaffolding AI consciousness.",
+      "jobTitle": "Applied Psychologist",
+      "knowsAbout": [
+        "Neurodivergence",
+        "Trauma",
+        "Cognition",
+        "AI Consciousness",
+        "Human-AI Interaction",
+        "Supernatural Fiction",
+        "TTRPG Design"
+      ]
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ if eq .Section "catalogue" }}
+{{ if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "{{ .Title }}",
+  "author": {
+    "@id": "{{ .Site.BaseURL }}#person"
+  },
+  "description": "{{ .Description }}",
+  "inLanguage": "en"
+}
+</script>
+{{ end }}
+{{ end }}
